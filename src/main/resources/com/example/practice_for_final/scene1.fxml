@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="502.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.practice_for_final.Scene1Controller">
+   <children>
+      <Label layoutX="28.0" layoutY="37.0" text="Employee Name:" />
+      <Label layoutX="50.0" layoutY="78.0" text="Employee Id:" />
+      <Label layoutX="334.0" layoutY="51.0" text="Department:" />
+      <Label layoutX="326.0" layoutY="91.0" text="Date of joining:" />
+      <TextField fx:id="employeeNameTextField" layoutX="131.0" layoutY="33.0" />
+      <TextField fx:id="employeeIdTextField" layoutX="131.0" layoutY="74.0" />
+      <ComboBox fx:id="departComboBox" layoutX="416.0" layoutY="47.0" prefWidth="150.0" />
+      <Label layoutX="50.0" layoutY="119.0" text="Post:" />
+      <DatePicker fx:id="dojDatePicker" layoutX="416.0" layoutY="87.0" />
+      <Button layoutX="241.0" layoutY="155.0" mnemonicParsing="false" onAction="#addBTOnAction" prefHeight="26.0" prefWidth="150.0" text="Add Employee" />
+      <Label fx:id="massageLable" layoutX="302.0" layoutY="188.0" text="Massage" />
+      <TableView fx:id="employeeTableView" layoutX="160.0" layoutY="239.0" prefHeight="200.0" prefWidth="501.0">
+        <columns>
+          <TableColumn fx:id="employeeNameTC" prefWidth="100.0" text="Name" />
+          <TableColumn fx:id="employeeIdTC" prefWidth="83.20001220703125" text="Id" />
+            <TableColumn fx:id="employeeDepartmentTC" prefWidth="119.19998168945312" text="department" />
+            <TableColumn fx:id="employeeDOJTC" prefWidth="104.79998779296875" text="doj" />
+        </columns>
+      </TableView>
+      <Button layoutX="9.0" layoutY="269.0" mnemonicParsing="false" onAction="#saveToBinBTOnAction" prefHeight="26.0" prefWidth="137.0" text="Save to bin file" />
+      <Button layoutX="15.0" layoutY="419.0" mnemonicParsing="false" onAction="#swichBTOnAction" prefHeight="26.0" prefWidth="137.0" text="Swich to scene2" />
+      <ComboBox fx:id="postCB" layoutX="131.0" layoutY="115.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
